@@ -3,86 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Coffee Shop Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./coffeeshop.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(3px); /* Blur effect */
+            z-index: -1; /* Behind the content */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color:white;
+            text-shadow: 3px 4px 3px blueviolet;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            position: relative;
+            /* background-color: rgba(255, 255, 255, 0.8); Slight background to make text readable */
+        }
+
+        th, td {
+            
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #8b5e34;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            font-size: 1.8em;
+            margin: 10px;
+            color:white;
+            text-shadow: 3px 4px 3px blueviolet;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h3{
+            text-shadow: 3px 4px 3px blueviolet;
+        }
+    </style>
 </head>
-<body style="background-color: purple;">
-    <center>
-<h1 style="color: rgb(255, 255, 255);">CHILLING CAFE</h1>
-<body style="background-color:antiquewhite;"></body>
-<img src="./4bdd7c9a-f8fd-4b0e-ba0b-b270c277ae2b.jfif" style="height: 200px;"> <br>
-<h1 style="color:black;">COFFE MENU</h1>
-<table border="1">
-    <tr>
-        <th>NAME</th>
-        <th>HOT</th>
-        <th>ICED</th>
-        <th>BLEND</th>
-    </tr>
-    <tr>
-        <td>cappacino</td>
-        <td>$15</td>
-        <td>$18</td>
-        <td>$20</td>
-    </tr>
-    <tr>
-        <td>Fresh Latte</td>
-        <td>$10</td>
-        <td>$18</td>
-        <td>$20</td>
-    </tr>
-    <tr>
-        <td>Mocha</td>
-        <td>$15</td>
-        <td>$18</td>
-        <td>$20</td>
-    </tr>
-    <tr>
-        <td>Expresso</td>
-        <td>$15</td>
-        <td>$20</td>
-        <td>$10</td>
-
-    </tr>
-    <tr>
-        <td>Black Coffe</td>
-        <td>$20</td>
-        <td>$15</td>
-    </tr>
-</table>
-<table border="1">
-    <h1 style="color: rgb(234, 236, 231);">TEA MENU</h1>
-    <tr>
-        <th>Name</th>
-        <th>Hot</th>
-        <th>Iced</th>
-        <th>Addon</th>
-    </tr>
-    <tr>
-        <td>Pure White Milk</td>
-        <td>$10</td>
-        <td>$15</td>
-        <td>$20</td>
-    </tr>
-    <tr>
-        <td>Taiwan Tea</td>
-        <td>$13</td>
-        <td>$10</td>
-        <td>$15</td>
-    </tr>
-    <tr>
-        <td>Green Tea</td>
-        <td>$15</td>
-        <td>15</td>
-        <td>$20</td>
-    </tr>
-</table> <br>
-<h1 style="color: rgb(255, 250, 246);">Special Items</h1>
-<img src="./0cdc9bb1-a072-4dbc-a854-3102cab47e5f.jfif" width="300" height="150"> <br><br>
-<img src="./1e4d3943-d92e-4040-b9a0-783462960124.jfif" width="300" height="150"> <br>
-<h1 style="color:rgb(247, 247, 247) ;">About our Cafe</h1>
-<p>It is inhumane, in my opinion, to force people who genuinely have a medical need for coffee to wait in line behind people who apparently view it as some kind of recreational activity." - Dave Barry</p> <br>
-<h1 style="color: rgb(255, 255, 255);">WEBSITE CREATED BY N.AMIRA</h1>
-
-</center>
+<body>
+    <h1>Welcome to Our Coffee Shop</h1>
+    <table>
+        <caption>Coffee Menu</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./espresso.jfif" alt="Espresso Image"><br> Espresso</td>
+                <td>Strong and rich coffee</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td><img src="./latte.jfif" alt="Latte Image"><br> Latte</td>
+                <td>Coffee with steamed milk</td>
+                <td>$4.00</td>
+            </tr>
+            <tr>
+                <td><img src="./Cappuccino.jfif" alt="Cappuccino Image"><br> Cappuccino</td>
+                <td>Coffee with milk and foam</td>
+                <td>$4.50</td>
+            </tr>
+            <tr>
+                <td><img src="./Americano.jfif" alt="Americano Image"><br> Americano</td>
+                <td>Espresso with hot water</td>
+                <td>$3.50</td>
+            </tr>
+            <tr>
+                <td><img src="./Mocha.jfif" alt="Mocha Image"><br> Mocha</td>
+                <td>Chocolate and coffee blend</td>
+                <td>$5.00</td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+    <h3>Website created by : N.Amira</h3>
 </body>
 </html>
